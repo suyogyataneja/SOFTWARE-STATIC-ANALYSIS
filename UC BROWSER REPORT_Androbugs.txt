@@ -1,0 +1,1083 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: com.UCMobile.intl
+Package Version Name: 12.11.8.1186
+Package Version Code: 10628
+Min Sdk: 14
+Target Sdk: 26
+MD5   : 01cad7524f7d622277b94a3cf52edfba
+SHA1  : 4d53e3d898dc7cb1ae358c4e1e365247a9678455
+SHA256: db010a967bceaade2b729ca4c11f03f8e8cb3ddcbdd4022f4271c10607304e69
+SHA512: 385de4f540e6767982fd5a977b09fda577e354b4964f1318275155dcc53d548ce9c8bd455f027c87ebb04e2420f9775f53d2dff02909587de9d5f699d54e62f2
+Analyze Signature: a27a7134ecdc4b11b6af82c1bab59b5aee2a0d46b45aa385c37f13eb88ddadfeaa847f080ae968399941e5526be754cbc58297888b91ba0dd5caa12305fe0c83
+------------------------------------------------------------------------------------------------
+[Critical] <Command> Runtime Command Checking:
+           This app is using critical function 'Runtime.getRuntime().exec("...")'.
+           Please confirm these following code secions are not harmful:
+               => Lanet/channel/a/k;->hW(I)Ljava/lang/String; (0x2e) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcn/help/acs/a;->a(Ljava/lang/String;)Ljava/lang/String; (0x10) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcn/help/acs/g;->a(Ljava/lang/String;)Z (0x26) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/UCMobile/a/b/c;->oU(Ljava/lang/String;)Ljava/lang/String; (0x2a) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/pp/xfw/RomUtil;->a(Ljava/lang/String;)Ljava/lang/String; (0x26) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/b/a/i/b;->getCpuArch()Ljava/lang/String; (0x46) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0xd4) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0x112) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0x150) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0x18e) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0x1cc) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0x20a) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0x248) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/base/wa/f/a;->PQ()V (0x286) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/browser/b/b$6;->run()V (0x30) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/browser/bgprocess/b/a;->a([Ljava/lang/String; Z)Lcom/uc/browser/bgprocess/b/a$a; (0x12) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/browser/internaldex/b;->p(Ljava/io/File; Ljava/io/File;)Z (0x12c) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/webview/export/internal/utility/h;->a(Ljava/io/File; Ljava/io/File; Ljava/io/File; Z)Ljava/io/File; (0x144) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/webview/export/internal/utility/h;->a(Ljava/io/File;)Z (0x64) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/webview/export/internal/utility/h;->a([Ljava/io/File; [Ljava/io/File; [Ljava/io/File;)[Ljava/io/File; (0x82) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/webview/export/internal/utility/h;->b(Ljava/io/File;)Z (0x64) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/yolo/base/platform/f;->getCpuArch()Ljava/lang/String; (0x34) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lcom/uc/browser/g;->gH(Ljava/lang/String; Ljava/lang/String;)V (0x36) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+[Critical] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           'Fragment' or 'Fragment for ActionbarSherlock' has a severe vulnerability prior to Android 4.4 (API 19).
+           Please check:
+           (1)http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#KITKAT
+           (2)http://developer.android.com/reference/android/preference/PreferenceActivity.html#isValidFragment(java.lang.String)
+           (3)http://stackoverflow.com/questions/19973034/isvalidfragment-android-api-19
+           (4)http://securityintelligence.com/new-vulnerability-android-framework-fragment-injection/
+           (5)http://securityintelligence.com/wp-content/uploads/2013/12/android-collapses-into-fragments.pdf
+           (6)https://cureblog.de/2013/11/cve-2013-6271-remove-device-locks-from-android-phone/
+               Please make sure you check the valid fragment inside the overridden 'isValidFragment' method:
+                   Lcom/uc/devconfig/view/DevConfigActivity;->isValidFragment(Ljava/lang/String;)Z
+               All of the potential vulnerable "fragment":
+                   Landroid/arch/lifecycle/b;
+                   Lcom/k/a/d/e;
+[Critical] <Implicit_Intent> Implicit Service Checking:
+           To ensure your app is secure, always use an explicit intent when starting a Service and DO NOT declare intent filters for your
+           services. Using an implicit intent to start a service is a security hazard because you cannot be certain what service will
+           respond to the intent, and the user cannot see which service starts.
+           Reference: http://developer.android.com/guide/components/intents-filters.html#Types
+               => com.taobao.accs.ChannelService
+               => com.taobao.accs.data.MsgDistributeService
+               => org.android.agoo.accs.AgooService
+               => com.UCMobile.intl.TaobaoIntentService
+               => com.taobao.agoo.TaobaoMessageIntentReceiverService
+               => com.uc.browser.multiprocess.resident.ResidentIpcService
+               => com.uc.ud.ploys.friend.FriendAcceptorService
+               => com.uc.ud.ploys.sync.AuthenticatorService
+[Critical] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           This app allows Self-defined HOSTNAME VERIFIER to accept all Common Names(CN).
+           This is a critical vulnerability and allows attackers to do MITM attacks with his valid certificate without your knowledge.
+           Case example:
+           (1)http://osvdb.org/96411
+           (2)http://www.wooyun.org/bugs/wooyun-2010-042710
+           (3)http://www.wooyun.org/bugs/wooyun-2010-052339
+           Also check Google doc: http://developer.android.com/training/articles/security-ssl.html (Caution: Replacing HostnameVerifier can
+           be very dangerous).
+           OWASP Mobile Top 10 doc: https://www.owasp.org/index.php/Mobile_Top_10_2014-M3
+           Check this book to see how to solve this issue: http://goo.gl/BFb65r
+
+           To see what's the importance of Common Name(CN) verification.
+           Use Google Chrome to navigate:
+            - https://www.google.com   => SSL certificate is valid
+            - https://60.199.175.158/  => This is the IP address of google.com, but the CN is not match, making the certificate invalid. You
+           still can go Google.com but now you cannot distinguish attackers from normal users
+
+           Please check the code inside these methods:
+               Lanet/channel/a/c$b;->verify(Ljava/lang/String; Ljavax/net/ssl/SSLSession;)Z
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:60):
+               http://%s:%d/%s
+                   => Lcom/facebook/ads/internal/r/b/f;->d(Ljava/lang/String;)Ljava/lang/String;
+               http://100.84.44.65:9081/collect?uc_param_str=
+                   => Lcom/yolo/a/c/b;-><clinit>()V
+               http://8.37.228.155:5380/d
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://ab.fit
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://abroad.apilocate.amap.com/mobile/binary
+                   => Lcom/b/bs;->c(Z Z)Lcom/c/a/a/a/a;
+                   => Lcom/b/bi;->a(Landroid/content/Context;)V
+                   => Lcom/b/bi;->c(Landroid/content/Context;)V
+                   => Lcom/b/aj;->a(Lcom/amap/api/location/AMapLocation;)Z
+               http://adslot.uc.cn/csi/?uc_param_str=pffrvessbilicpntbtlaln
+                   => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V
+               http://api.open.uc.cn/cas/?uc_param_str=frpfvesscpmilaprnisieiutst&target_client_id=36&target_redirect_uri=http%3A%2F%2Fmydis
+                    km.ucweb.com%2Fnetdisk%2Fdirview%3Fchannel_id%3D25%2F%3Fuc_param_str%3Dfrpfvesscpmilaprnisieiut&client_id=73
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://api.open.uc.cn/cas/?uc_param_str=frpfvesscpmilaprnisieiutst&target_client_id=36&target_redirect_uri=http%3A%2F%2Fmydis
+                    km.ucweb.com%2Fnetdisk%2Ffilestation%3Fchannel_id%3D26%2F%3Fuc_param_str%3Dfrpfvesscpmilaprnisieiut&client_id=73
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://api.open.uc.cn/cas/?uc_param_str=frpfvesscpmilaprnisieiutst&target_client_id=37&target_redirect_uri=http%3a%2f%2fmydis
+                    km.uc.cn%2fbookmarkrecovery%2findex%3fuc_param_str%3dfrpfvesscpmilaprnisieint&client_id=72
+                   => Lcom/uc/base/f/h;->a(Lcom/uc/browser/core/setting/view/q;)V
+               http://api.open.uc.cn/cas/?uc_param_str=frpfvesscpmilaprnisieiutst&target_client_id=37&target_redirect_uri=http%3a%2f%2fmydis
+                    km.uc.cn%2fbookmarkrecovery%2findex%3fuc_param_str%3dfrpfvesscpmilaprnisieint&client_id=72&st=
+                   => Lcom/uc/base/f/h;->a(Lcom/uc/browser/core/setting/view/q;)V
+               http://api.open.uc.cn/cas/?uc_param_str=frpfvesscpmilaprnisieiutst&target_client_id=4&target_redirect_uri=http%3A%2F%2Fid.uc.
+                    cn%2F%3Fuc_param_str%3Dfrpfvesscpmilaprnisieiut&client_id=73
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://apilocate.amap.com/mobile/binary
+                   => Lcom/b/bs;->c(Z Z)Lcom/c/a/a/a/a;
+                   => Lcom/b/bi;->c(Landroid/content/Context;)V
+               http://apilocatesrc.amap.com/mobile/binary
+                   => Lcom/b/bs;->c(Z Z)Lcom/c/a/a/a/a;
+               http://app.uc.cn/appstore/AppCenter/batch_add_app
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://aws.napi.ucweb.com/3/classes/competition/categories/{categoryName}/lists/{listName}?_app_id=cricket&_fetch=1&_size=20
+                   => Lcom/uc/browser/multiprocess/bgwork/collapsed/a;-><init>(Landroid/content/Context;)V
+                   => Lcom/uc/browser/multiprocess/bgwork/collapsed/a;->a(Lcom/uc/browser/bgprocess/bussiness/a/a/a$a;)V
+               http://browser.cloud.ucweb.com/sync
+                   => Lcom/uc/base/f/b/n;->aOk()V
+               http://bts-la.ucweb.com/
+                   => Lcom/uc/browser/v;->buo()V
+               http://buc.kim
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://c.union.ucweb.com
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://cloud.ucweb.com/help/sync?display=phone&pl=en
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://do.ink
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://gj.applog.uc.cn:80/collect?uc_param_str=
+                   => Lcom/yolo/a/c/b;-><clinit>()V
+               http://gj.applog.uc.cn:9081/collect?uc_param_str=
+                   => Lcom/yolo/a/c/b;-><clinit>()V
+               http://mydiskm.uc.cn/dispatcher?uc_param_str=frpfvesscpmilaprnisieint
+                   => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V
+               http://mynavi.ucweb.com/geticon.php
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://newbeeqp-perflist2.in-uc.uae-2.uc.cn/collect?
+                   => Lcom/uc/browser/j/c;->PA()[Ljava/lang/String;
+               http://pdds.ucweb.com/download/newest/UCBrowser/en-us/%d/354
+                   => Lcom/uc/browser/g;->bzK()Ljava/lang/String;
+               http://play.google.com/store/apps/
+                   => Lcom/facebook/ads/internal/s/c/g;->a(Landroid/content/Context;)Z
+               http://restapi.amap.com
+                   => Lcom/b/co;->ac(Landroid/content/Context;)Ljava/net/Proxy;
+               http://restapi.amap.com/v3/geocode/regeo
+                   => Lcom/b/ad;->c(Landroid/content/Context; D D)Ljava/lang/String;
+               http://restapi.amap.com/v3/iasdkauth
+                   => Lcom/b/v$b;->c()Ljava/lang/String;
+               http://safe.ucweb.com:80/?dataver=pb
+                   => Lcom/uc/business/e;-><init>()V
+               http://share.uc.cn/bloggear2/UCtweet2/share?uc_param_str=dnvefrpfbicpla
+                   => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V
+               http://skin.ucweb.com/login?uc_param_str=dnfrmipfprssvepilacpna
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://sl.ink
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://special.skin.ucweb.com/?uc_param_str=dnfrmipfprssvepilacpna
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://special.skin.ucweb.com/carousels?uc_param_str=dnfrmipfprssvepilacpna
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://su.fit
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://tz.ucweb.com
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://u.uc123.com:80
+                   => Lcom/uc/business/e;-><init>()V
+               http://u.ucfly.com:80
+                   => Lcom/uc/business/e;-><init>()V
+               http://uc.ink
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://uc.ucweb.com:80
+                   => Lcom/uc/browser/b/i/a;->aSD()V
+                   => Lcom/uc/business/e;-><init>()V
+               http://uc.xyz
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://uc1.ucweb.com:80/^^http://u1.uc123.com:80/^^http://u1.ucfly.com:80/^^
+                   => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V
+               http://uc9.ucweb.com/
+                   => Lcom/uc/business/l/a;->E(Z Z)V
+               http://uccricket.ucweb.com
+                   => Lcom/uc/browser/webwindow/f/d;-><clinit>()V
+               http://ucloud.ucweb.local:9200/ucmobileintl/
+                   => Lcom/uc/base/tools/collectiondata/c;-><clinit>()V
+               http://ucus.ucweb.com/usquery.php
+                   => Lcom/uc/business/a/ae;->l(Lcom/uc/base/push/business/c/c;)Z
+                   => Lcom/uc/business/a/l;->getDefaultUrl()Ljava/lang/String;
+                   => Lcom/uc/business/cms/g;->fT(Z)V
+                   => Lcom/uc/browser/core/skinmgmt/k;->bFd()V
+               http://up4.ucweb.com:8012/logs/UCMobileIntl/
+                   => Lcom/uc/base/tools/collectiondata/c;-><clinit>()V
+               http://up4.ucweb.com:8012/upload
+                   => Lcom/g/a/a$a;-><init>(Landroid/content/Context;)V
+               http://vps.ucweb.com/?uc_param_str=cpnt
+                   => Lcom/uc/browser/core/download/al;->bNz()Ljava/lang/String;
+               http://wap.ucweb.com
+                   => Lcom/uc/base/util/o/a;->isUCDefaultBrowser()Z
+               http://webstore.ucweb.com/add_app
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://webstore.ucweb.com/index?uc_param_str=nieidnutssvebipfcpla
+                   => Lcom/uc/browser/core/launcher/b/b;->bGJ()V
+                   => Lcom/uc/business/a/z;->aLZ()V
+               http://www.facebook.com
+                   => Lcom/facebook/ads/internal/view/b/a;-><clinit>()V
+               http://www.google.com
+                   => Lcom/uc/browser/core/download/service/r;->bMu()Ljava/util/List;
+               http://xmlpull.org/v1/doc/features.html#indent-output
+                   => Lcom/uc/framework/xml/a;->setFeature(Ljava/lang/String; Z)V
+                   => Lcom/e/a/c/a/a$a;->JG()Z
+                   => Lcom/e/a/c/a/e;->setFeature(Ljava/lang/String; Z)V
+               http://xmlpull.org/v1/doc/features.html#process-namespaces
+                   => Lcom/uc/framework/xml/XmlBlockModify$a;->setFeature(Ljava/lang/String; Z)V
+                   => Lcom/uc/framework/xml/XmlBlockModify$a;->getFeature(Ljava/lang/String;)Z
+               http://xmlpull.org/v1/doc/features.html#report-namespace-prefixes
+                   => Lcom/uc/framework/xml/XmlBlockModify$a;->setFeature(Ljava/lang/String; Z)V
+                   => Lcom/uc/framework/xml/XmlBlockModify$a;->getFeature(Ljava/lang/String;)Z
+[Critical] <SSL_Security> SSL Certificate Verification Checking:
+           This app DOES NOT check the validation of SSL Certificate. It allows self-signed, expired or mismatch CN certificates for SSL
+           connection.
+           This is a critical vulnerability and allows attackers to do MITM attacks without your knowledge.
+           If you are transmitting users' username or password, these sensitive information may be leaking.
+           Reference:
+           (1)OWASP Mobile Top 10 doc: https://www.owasp.org/index.php/Mobile_Top_10_2014-M3
+           (2)Android Security book: http://goo.gl/BFb65r
+           (3)https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=134807561
+           This vulnerability is much more severe than Apple's "goto fail" vulnerability: http://goo.gl/eFlovw
+           Please do not try to create a "X509Certificate" and override "checkClientTrusted", "checkServerTrusted", and "getAcceptedIssuers"
+           functions with blank implementation.
+           We strongly suggest you use the existing API instead of creating your own X509Certificate class.
+           Please modify or remove these vulnerable code:
+               [Confirm Vulnerable]
+               => Lanet/channel/a/c$a$a;
+                     -> used by: Lanet/channel/a/c$a;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
+               => Lcom/uc/base/net/d/a$1;
+                     -> used by: Lcom/uc/base/net/d/a;->aqt()V
+               --------------------------------------------------
+               [Maybe Vulnerable (Please manually confirm)]
+               => Lcom/uc/browser/b/c/a$3;
+                     -> used by: Lcom/uc/browser/b/c/a$2;->run()V
+[Critical]  AndroidManifest Critical Use Permission Checking:
+           This app has very high privileges. Use it carefully.
+               Critical use-permission found: "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lcom/uc/browser/webcore/d/b;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V (0xe) --->
+                    Lcom/uc/webview/browser/BrowserWebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/ads/zzari;-><init>(Lcom/google/android/gms/internal/ads/zzash;
+                    Lcom/google/android/gms/internal/ads/zzasi; Ljava/lang/String; Z Z Lcom/google/android/gms/internal/ads/zzci;
+                    Lcom/google/android/gms/internal/ads/zzang; Lcom/google/android/gms/internal/ads/zznx;
+                    Lcom/google/android/gms/ads/internal/zzbo; Lcom/google/android/gms/ads/internal/zzw;
+                    Lcom/google/android/gms/internal/ads/zzhs;)V (0x136) --->
+                    Lcom/google/android/gms/internal/ads/zzari;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/uc/webview/export/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V (0xa) --->
+                    Lcom/uc/webview/export/internal/interfaces/IWebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/uc/browser/webwindow/b;->aVg()V (0xb4) ---> Lcom/uc/browser/webcore/d/b;->addJavascriptInterface(Ljava/lang/Object;
+                    Ljava/lang/String;)V
+               => Lcom/facebook/ads/internal/view/c/a;-><init>(Landroid/content/Context; Ljava/lang/ref/WeakReference; I)V (0xec) --->
+                    Lcom/facebook/ads/internal/view/c/a;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/facebook/ads/internal/view/e/b;->h()V (0xe2) --->
+                    Lcom/facebook/ads/internal/view/c/a;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/uc/base/jssdk/b;->a(Lcom/uc/base/jssdk/f; I)Lcom/uc/base/jssdk/i; (0x1e) --->
+                    Lcom/uc/base/jssdk/f;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/ads/zzasq;-><init>(Lcom/google/android/gms/internal/ads/zzash;
+                    Lcom/google/android/gms/internal/ads/zzasi; Ljava/lang/String; Z Z Lcom/google/android/gms/internal/ads/zzci;
+                    Lcom/google/android/gms/internal/ads/zzang; Lcom/google/android/gms/internal/ads/zznx;
+                    Lcom/google/android/gms/ads/internal/zzbo; Lcom/google/android/gms/ads/internal/zzw;
+                    Lcom/google/android/gms/internal/ads/zzhs;)V (0xe8) --->
+                    Lcom/google/android/gms/internal/ads/zzass;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/ads/zzuf;-><init>(Landroid/content/Context; Lcom/google/android/gms/internal/ads/zzang;)V
+                    (0x66) ---> Lcom/google/android/gms/internal/ads/zzass;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/uc/browser/webwindow/quick/a;-><init>(Landroid/content/Context; Lcom/uc/browser/webwindow/quick/b;)V (0x19e) --->
+                    Lcom/uc/webview/export/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/b/bd;->startAssistantLocation(Landroid/webkit/WebView;)V (0x60) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/ads/zzass;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V (0xc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Lcom/taobao/accs/c/a$a;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/ClassLoader;)V (0x8)
+                    ---> Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/taobao/accs/c/a$a;->findClass(Ljava/lang/String;)Ljava/lang/Class; (0x0) --->
+                    Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/uc/imagecodec/export/ImageCodecFactory;->a(Landroid/content/Context;)Ldalvik/system/DexClassLoader; (0x2d4) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/uc/imagecodec/export/ImageCodecFactory;->getImageCodecImpl(Landroid/content/Context;)Lcom/uc/imagecodec/export/IImage
+                    Codec; (0x68) ---> Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/uc/imagecodec/export/ImageCodecFactory;->getImageCodecViewImpl(Landroid/content/Context;)Lcom/uc/imagecodec/export/II
+                    mageCodecView; (0x34) ---> Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/uc/webview/export/cyclone/UCLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V (0xa) ---> Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String; Ljava/lang/ClassLoader;)V
+               => Lcom/uc/webview/export/cyclone/UCLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class; (0x0) --->
+                    Ldalvik/system/DexClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/uc/webview/export/cyclone/UCLoader;->loadClass(Ljava/lang/String; Z)Ljava/lang/Class; (0x22) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String; Z)Ljava/lang/Class;
+               => Lcom/uc/webview/export/cyclone/UCService;->initImpl(Ljava/lang/Class;)Lcom/uc/webview/export/cyclone/service/UCServiceInte
+                    rface; (0x96) ---> Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/uc/webview/export/internal/utility/e;->b(Landroid/content/Context; Ljava/io/File;
+                    Lcom/uc/webview/export/internal/utility/e$a;)Ljava/lang/String; (0x112) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/alibaba/wireless/security/framework/c;->c(Ljava/lang/String; Ljava/lang/String;)Ldalvik/system/DexClassLoader;
+                    (0x104) ---> Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/b/ce;->i()Ljava/lang/String; (0x26) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/b/e;->J(Landroid/content/Context;)Ljava/lang/String; (0x2a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/e/a/c/a/b;->hO(Ljava/lang/String;)Lcom/e/a/c/a/a; (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/facebook/ads/internal/r/b/o;->b(Landroid/content/Context;)Ljava/io/File; (0x8) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/facebook/internal/n;->b(Lorg/json/JSONObject; Landroid/content/Context;)V (0xbc) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/facebook/internal/n;->b(Lorg/json/JSONObject; Landroid/content/Context;)V (0x110) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/google/android/gms/internal/ads/zznn;->zza(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/util/Map;)V (0x56) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/b/a/i/c;->SC()Ljava/lang/String; (0x0) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/b/a/i/c;->SI()J (0xc) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/b/a/i/c;->getExternalStorageDirectory()Ljava/io/File; (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/b/a/i/c;->kV(Ljava/lang/String;)Z (0x30) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/b/a/i/c;->kX(Ljava/lang/String;)Ljava/lang/String; (0x24) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/b/a/i/c;->lb()V (0x3a) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/b/a/i/c;->kR(Ljava/lang/String;)Ljava/lang/String; (0x18) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/base/d/f/a/a;->Mf()Ljava/lang/String; (0x4) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/base/util/temp/i;->bf(Landroid/content/Context; Ljava/lang/String;)Z (0x2e) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/browser/b$4;->onPageFinished(Landroid/webkit/WebView; Ljava/lang/String;)V (0x48) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/browser/business/ucmusic/j;->EU(Ljava/lang/String;)Ljava/lang/String; (0x14) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/crashsdk/e;->c(Ljava/io/OutputStream;)V (0x9e) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/crashsdk/h;->U()Ljava/lang/String; (0x74) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/framework/resources/p;->iK(Ljava/lang/String;)Z (0x2c) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/launchboost/collect/MethodCollector;->startSave(Landroid/content/Context;)V (0xda) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/sdk/ulog/c$a;->ajP()Lcom/uc/sdk/ulog/c; (0x58) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/spacex/c/a;-><init>()V (0x16) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V (0xc22) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V (0xd9a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V (0xf34) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V (0x11c0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V (0x11f4) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V (0x12c8) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webkit/sdk/CoreFactoryImpl;->initSDK(Landroid/content/Context;)V (0x1360) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webview/export/cyclone/UCCyclone;->decompressIfNeeded(Landroid/content/Context; Ljava/lang/String;
+                    Ljava/lang/String; J J Ljava/io/File; Ljava/io/File; Ljava/io/FilenameFilter; Z I)Z (0x4c) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/yolo/base/a/aa;->SI()J (0x10) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/yolo/base/a/aa;->ajk()J (0x10) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/yolo/base/platform/a;->lb()V (0x5c) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/yolo/framework/a/b;->lb()V (0x3a) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lunet/org/chromium/base/PathUtils;->getExternalCacheDirectory(Landroid/content/Context;)Ljava/lang/String; (0x5a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lunet/org/chromium/base/PathUtils;->getExternalFilesDirectory(Landroid/content/Context;)Ljava/lang/String; (0x5e) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lunet/org/chromium/base/PathUtils;->getExternalStorageDirectory()Ljava/lang/String; (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/browser/webcore/b/a;->buI()I (0x358) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webview/export/internal/setup/l;->a(Landroid/content/Context;)V (0x66) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webview/export/internal/setup/l;->b(Landroid/content/Context;)Ljava/lang/String; (0x5a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webview/export/internal/setup/l;->run()V (0x27e) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webview/export/internal/setup/l;->run()V (0x2cc) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/uc/webview/export/internal/setup/UCSetupTask;->setupGlobalOnce()V (0xfa) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                 activity => com.uc.browser.ProxyActivity
+                 activity => com.uc.browser.business.search.quicksearch.SearchActivity
+                 activity => com.uc.browser.webwindow.quick.QuickWindowActivity
+                 activity => com.uc.browser.business.shortcut.ShortcutFolderActivity
+                 activity => com.uc.application.pwa.webapps.WebappLauncherActivity
+                  service => com.taobao.accs.ChannelService
+                  service => com.taobao.accs.data.MsgDistributeService
+                  service => org.android.agoo.accs.AgooService
+                  service => com.UCMobile.intl.TaobaoIntentService
+                  service => com.taobao.agoo.TaobaoMessageIntentReceiverService
+                  service => com.uc.browser.multiprocess.resident.ResidentIpcService
+                  service => com.uc.ud.ploys.friend.FriendAcceptorService
+                 receiver => com.taobao.accs.ServiceReceiver
+                 receiver => com.taobao.agoo.AgooCommondReceiver
+                 receiver => com.uc.application.desktopwidget.model.UCWidgetProvider
+                 receiver => com.uc.browser.bgprocess.BackgroundProcessBroadcastReveiver
+                 receiver => com.uc.base.active.NotificationEventReceiver
+                 receiver => com.uc.ud.UdReceiver
+                 receiver => com.intowow.sdk.ScheduleReceiver
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcn/help/acs/g;->x()Ljava/lang/String; (0x18) ---> Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/e/a/a/a/c;->cc(Landroid/content/Context;)Ljava/lang/String; (0x1a) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/taobao/accs/data/Message;->b(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Lcom/taobao/accs/data/Message; (0x11e) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/uc/b/a/i/a;->Sx()Ljava/lang/String; (0x1a) ---> Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/uc/webkit/sdk/b;->b()Ljava/lang/String; (0x2c) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/taobao/agoo/a/a/d;->o(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)[B (0xbc) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcn/help/acs/g;->A()Ljava/lang/String; (0x14) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/uc/b/a/i/a;->getAndroidId()Ljava/lang/String; (0x1e) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/appsflyer/c;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Z Landroid/content/SharedPreferences; Z Landroid/content/Intent;)Ljava/util/Map; (0xddc) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/e/a/b/b;->Jv()[B (0x30) ---> Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;
+                    Ljava/lang/String;)Ljava/lang/String;
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/b/bd;->startAssistantLocation(Landroid/webkit/WebView;)V
+               Lcom/facebook/ads/internal/adapters/l;->a(Landroid/content/Context; Z)V
+               Lcom/facebook/ads/internal/s/c/a;->d()V
+               Lcom/facebook/ads/internal/s/c/b;->b(Landroid/webkit/WebView;)V
+               Lcom/facebook/ads/internal/s/c/d;->c(Landroid/content/Context; Z)Ljava/lang/String;
+               Lcom/facebook/ads/internal/s/c/d;->c(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/facebook/ads/internal/view/c/a;-><init>(Landroid/content/Context; Ljava/lang/ref/WeakReference; I)V
+               Lcom/facebook/ads/internal/view/e/b;->j()Lcom/facebook/ads/internal/view/c/a;
+               Lcom/facebook/bidding/a/b/a;->b(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/facebook/internal/c;->Cl(I)V
+               Lcom/google/android/gms/ads/internal/zzbp;-><init>(Landroid/content/Context; Lcom/google/android/gms/internal/ads/zzjn;
+                    Ljava/lang/String; Lcom/google/android/gms/internal/ads/zzang;)V
+               Lcom/uc/base/system/b/a/b;->aQC()Ljava/lang/String;
+               Lcom/uc/browser/b;->a(Landroid/content/Context; Landroid/content/DialogInterface; Ljava/lang/String;)V
+               Lcom/uc/browser/webcore/c/c;->buM()V
+               Lcom/uc/webview/export/WebSettings;->getAllowContentAccess()Z
+               Lcom/uc/webview/export/WebSettings;->getAllowFileAccess()Z
+               Lcom/uc/webview/export/WebSettings;->getBlockNetworkImage()Z
+               Lcom/uc/webview/export/WebSettings;->getBlockNetworkLoads()Z
+               Lcom/uc/webview/export/WebSettings;->getBuiltInZoomControls()Z
+               Lcom/uc/webview/export/WebSettings;->getCacheMode()I
+               Lcom/uc/webview/export/WebSettings;->getCursiveFontFamily()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->getDatabaseEnabled()Z
+               Lcom/uc/webview/export/WebSettings;->getDefaultFixedFontSize()I
+               Lcom/uc/webview/export/WebSettings;->getDefaultFontSize()I
+               Lcom/uc/webview/export/WebSettings;->getDefaultTextEncodingName()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->getDisplayZoomControls()Z
+               Lcom/uc/webview/export/WebSettings;->getDomStorageEnabled()Z
+               Lcom/uc/webview/export/WebSettings;->getFantasyFontFamily()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->getFixedFontFamily()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->getJavaScriptCanOpenWindowsAutomatically()Z
+               Lcom/uc/webview/export/WebSettings;->getJavaScriptEnabled()Z
+               Lcom/uc/webview/export/WebSettings;->getLayoutAlgorithm()Lcom/uc/webview/export/WebSettings$LayoutAlgorithm;
+               Lcom/uc/webview/export/WebSettings;->getLoadWithOverviewMode()Z
+               Lcom/uc/webview/export/WebSettings;->getLoadsImagesAutomatically()Z
+               Lcom/uc/webview/export/WebSettings;->getMinimumFontSize()I
+               Lcom/uc/webview/export/WebSettings;->getMinimumLogicalFontSize()I
+               Lcom/uc/webview/export/WebSettings;->getPluginsEnabled()Z
+               Lcom/uc/webview/export/WebSettings;->getSansSerifFontFamily()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->getSaveFormData()Z
+               Lcom/uc/webview/export/WebSettings;->getSerifFontFamily()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->getStandardFontFamily()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->getTextZoom()I
+               Lcom/uc/webview/export/WebSettings;->getUseWideViewPort()Z
+               Lcom/uc/webview/export/WebSettings;->getUserAgentString()Ljava/lang/String;
+               Lcom/uc/webview/export/WebSettings;->setAllowContentAccess(Z)V
+               Lcom/uc/webview/export/WebSettings;->setAppCacheEnabled(Z)V
+               Lcom/uc/webview/export/WebSettings;->setAppCachePath(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setBlockNetworkImage(Z)V
+               Lcom/uc/webview/export/WebSettings;->setBlockNetworkLoads(Z)V
+               Lcom/uc/webview/export/WebSettings;->setBuiltInZoomControls(Z)V
+               Lcom/uc/webview/export/WebSettings;->setCacheMode(I)V
+               Lcom/uc/webview/export/WebSettings;->setCursiveFontFamily(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setDatabaseEnabled(Z)V
+               Lcom/uc/webview/export/WebSettings;->setDefaultFixedFontSize(I)V
+               Lcom/uc/webview/export/WebSettings;->setDefaultFontSize(I)V
+               Lcom/uc/webview/export/WebSettings;->setDefaultTextEncodingName(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setDisplayZoomControls(Z)V
+               Lcom/uc/webview/export/WebSettings;->setDomStorageEnabled(Z)V
+               Lcom/uc/webview/export/WebSettings;->setFantasyFontFamily(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setFixedFontFamily(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setGeolocationDatabasePath(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setGeolocationEnabled(Z)V
+               Lcom/uc/webview/export/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
+               Lcom/uc/webview/export/WebSettings;->setJavaScriptEnabled(Z)V
+               Lcom/uc/webview/export/WebSettings;->setLayoutAlgorithm(Lcom/uc/webview/export/WebSettings$LayoutAlgorithm;)V
+               Lcom/uc/webview/export/WebSettings;->setLoadWithOverviewMode(Z)V
+               Lcom/uc/webview/export/WebSettings;->setLoadsImagesAutomatically(Z)V
+               Lcom/uc/webview/export/WebSettings;->setMinimumFontSize(I)V
+               Lcom/uc/webview/export/WebSettings;->setMinimumLogicalFontSize(I)V
+               Lcom/uc/webview/export/WebSettings;->setNeedInitialFocus(Z)V
+               Lcom/uc/webview/export/WebSettings;->setSansSerifFontFamily(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setSaveFormData(Z)V
+               Lcom/uc/webview/export/WebSettings;->setSerifFontFamily(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setStandardFontFamily(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->setSupportMultipleWindows(Z)V
+               Lcom/uc/webview/export/WebSettings;->setSupportZoom(Z)V
+               Lcom/uc/webview/export/WebSettings;->setTextZoom(I)V
+               Lcom/uc/webview/export/WebSettings;->setUseWideViewPort(Z)V
+               Lcom/uc/webview/export/WebSettings;->setUserAgentString(Ljava/lang/String;)V
+               Lcom/uc/webview/export/WebSettings;->supportMultipleWindows()Z
+               Lcom/uc/webview/export/WebSettings;->supportZoom()Z
+               Lcom/uc/webview/export/internal/android/WebViewAndroid;-><init>(Landroid/content/Context; Landroid/util/AttributeSet;
+                    Lcom/uc/webview/export/WebView;)V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/facebook/ads/internal/s/c/a;->d()V (0x2c) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/facebook/internal/c;->Cl(I)V (0x60) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/uc/browser/b;->a(Landroid/content/Context; Landroid/content/DialogInterface; Ljava/lang/String;)V (0x36) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/b/bd;->startAssistantLocation(Landroid/webkit/WebView;)V (0x52) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/google/android/gms/internal/ads/zzass;-><init>(Lcom/google/android/gms/internal/ads/zzash;)V (0xb2) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/google/android/gms/ads/internal/zzbp;-><init>(Landroid/content/Context; Lcom/google/android/gms/internal/ads/zzjn;
+                    Ljava/lang/String; Lcom/google/android/gms/internal/ads/zzang;)V (0x68) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/google/android/gms/internal/ads/zzari;-><init>(Lcom/google/android/gms/internal/ads/zzash;
+                    Lcom/google/android/gms/internal/ads/zzasi; Ljava/lang/String; Z Z Lcom/google/android/gms/internal/ads/zzci;
+                    Lcom/google/android/gms/internal/ads/zzang; Lcom/google/android/gms/internal/ads/zznx;
+                    Lcom/google/android/gms/ads/internal/zzbo; Lcom/google/android/gms/ads/internal/zzw;
+                    Lcom/google/android/gms/internal/ads/zzhs;)V (0xb0) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice] <Command> Executing "root" or System Privilege Checking:
+           The app may has the code checking for "root" permission, mounting filesystem operations or monitoring system:
+               Lcom/facebook/ads/internal/s/a/g;->a()Lcom/facebook/ads/internal/s/a/g$a;  => 'su'
+               Lcn/help/acs/h;->c()Ljava/lang/String;  => '/system/bin/su'
+               Lcom/uc/browser/n/a/a;->b(Lcom/uc/browser/n/a/b;)V  => 'su'
+               Lcom/uc/base/net/b/h;-><clinit>()V  => 'su'
+               Lcom/uc/browser/internaldex/b;->p(Ljava/io/File; Ljava/io/File;)Z  => '/system/bin/ln'
+               Lcn/help/acs/g;->E()Ljava/lang/String;  => '/system/bin/cat'
+               Lcn/help/acs/c/a;-><clinit>()V  => '/system/bin/qemu-props'
+               Lcom/google/android/gms/common/util/d;->c(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;
+                    I)Ljava/lang/String;  => '/system/bin/logcat'
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases.
+           Prior to Android 4.0, Android has SQLite Journal Information Disclosure Vulnerability.
+           But it can only be solved by users upgrading to Android > 4.0 and YOU CANNOT SOLVE IT BY YOURSELF (But you can use encrypt your
+           databases and Journals by "SQLCipher" or other libs).
+           Proof-Of-Concept Reference:
+           (1) http://blog.watchfire.com/files/androidsqlitejournal.pdf
+           (2) http://www.youtube.com/watch?v=oCXLHjmH5rY
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lanet/channel/strategy/h;->WT()V (0x64) ---> Ljava/io/File;->delete()Z
+               => Lanet/channel/strategy/h;->WV()V (0x52) ---> Ljava/io/File;->delete()Z
+               => Lanet/channel/strategy/h;->WV()V (0x84) ---> Ljava/io/File;->delete()Z
+               => Lcom/UCMobile/model/ag;->aAV()V (0xe8) ---> Ljava/io/File;->delete()Z
+               => Lcom/UCMobile/model/d/a;->aCx()Z (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/UCMobile/model/p;->deleteFile(Ljava/lang/String;)Z (0x18) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/android/multidex/a;->Q(Ljava/io/File;)V (0x74) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/android/multidex/b$2;->run()V (0x68) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/android/multidex/b;->f(Ljava/io/File;)Z (0x3c) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/android/multidex/d;->b(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File; Ljava/lang/String;)V
+                    (0xca) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/android/multidex/d;->b(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File; Ljava/lang/String;)V
+                    (0x188) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/android/multidex/d;->k(Ljava/io/File; Ljava/io/File;)Ljava/util/List; (0x74) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/mbg/unet/internal/g;->a(Ljava/io/File;)V (0x24) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/d;->run()V (0x9c) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/d;->run()V (0x110) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/utils/f;->a(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File;)Z
+                    (0x64) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/utils/f;->a(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File;)Z
+                    (0x108) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/utils/f;->a(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File;)Z
+                    (0x15c) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/utils/f;->a(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File;)Z
+                    (0x17c) ---> Ljava/io/File;->delete()Z
+               => Lcom/appsflyer/a/b;->g(Ljava/lang/String; Landroid/content/Context;)V (0x50) ---> Ljava/io/File;->delete()Z
+               => Lcom/appsflyer/ab;->f(Ljava/lang/ref/WeakReference;)Ljava/lang/String; (0x10c) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ac;->a(Ljava/io/File; J)Lcom/b/ac; (0x40) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ac;->a(Ljava/io/File;)V (0xc) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ac;->i()V (0x180) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ac;->c(Ljava/lang/String;)Z (0x4a) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/af;->a(Lcom/b/az; Landroid/content/Context; Ljava/lang/String;)V (0xca) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/af;->b(Landroid/content/Context; Lcom/b/az; Ljava/lang/String;)V (0x1e) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/am$a;->getDatabasePath(Ljava/lang/String;)Ljava/io/File; (0xe2) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/be;->g(Landroid/content/Context;)Ljava/lang/String; (0x9a) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ce;->e(Ljava/lang/String;)V (0x86) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ce;->e(Ljava/lang/String;)V (0x92) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/k;->a(Ljava/io/File;)V (0x2a) ---> Ljava/io/File;->delete()Z
+               => Lcom/e/a/c/a/a;->hN(Ljava/lang/String;)Lcom/e/a/c/a/c; (0x84) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/ads/internal/h/e;->b(Landroid/content/Context;)V (0x28) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/ads/internal/r/b/a/d;->e(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/appevents/j;->a(Lcom/facebook/appevents/k;)V (0x54) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/appevents/j;->cgq()Lcom/facebook/appevents/k; (0x4e) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/appevents/j;->cgq()Lcom/facebook/appevents/k; (0x74) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/appevents/j;->cgq()Lcom/facebook/appevents/k; (0x90) ---> Ljava/io/File;->delete()Z
+               => Lcom/g/a/a/c;->a(Ljava/io/File; Ljava/io/File; Ljava/io/File;)Z (0x13c) ---> Ljava/io/File;->delete()Z
+               => Lcom/g/a/a/c;->m(Ljava/lang/String; Ljava/util/List;)Z (0x9c) ---> Ljava/io/File;->delete()Z
+               => Lcom/g/a/a/c;->m(Ljava/lang/String; Ljava/util/List;)Z (0x17c) ---> Ljava/io/File;->delete()Z
+               => Lcom/g/a/a/c;->m(Ljava/lang/String; Ljava/util/List;)Z (0x1fa) ---> Ljava/io/File;->delete()Z
+               => Lcom/g/a/d/a;->f(Ljava/io/File;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/iid/x;->GN()V (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/k/a/i/a;->aq(Ljava/io/File;)V (0xc) ---> Ljava/io/File;->delete()Z
+               => Lcom/k/a/i/a;->e(Ljava/io/File; J)Lcom/k/a/i/a; (0x40) ---> Ljava/io/File;->delete()Z
+               => Lcom/k/a/i/a;->vW(Ljava/lang/String;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/k/a/i/a;->ayR()V (0x180) ---> Ljava/io/File;->delete()Z
+               => Lcom/k/a/i/c;->ar(Ljava/io/File;)V (0x2a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/b/a/c/a;->F(Ljava/io/File;)Z (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/b/a/c/a;->K(Ljava/lang/String; Z)Ljava/io/File; (0x1a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/d/f/a/a;->F(Ljava/io/File;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/d/f/a/a;->jk(Ljava/lang/String;)Ljava/io/File; (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/secure/EncryptHelper;->eM(Ljava/lang/String; Ljava/lang/String;)Z (0x128) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/share/b/b/b/c;->b(Ljava/lang/String; Ljava/lang/String; Lcom/uc/base/share/b/b/b/c$a;)Ljava/io/File; (0x1d8)
+                    ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/system/SystemHelper;->extractedFile(Landroid/content/Context; Ljava/lang/String;)I (0xa0) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/base/system/SystemHelper;->extractedFile(Landroid/content/Context; Ljava/lang/String;)I (0x14e) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/base/system/SystemUtil$1;->run()V (0x36) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/tnwa/a;->a(Ljava/util/List;)V (0x20) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/tnwa/b/a;->e()V (0x24) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/tnwa/b/a;->e()V (0x74) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/tools/a/a$7;->run()V (0x226) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/util/c/a;->a([I Ljava/lang/String; Ljava/lang/String; Z)Z (0xdc) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/util/file/a;->Be(Ljava/lang/String;)Z (0xee) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/util/g/a$1;->run()V (0xb0) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/util/g/a$1;->run()V (0x1a2) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/util/g/a$1;->run()V (0x1d0) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/util/g/a$2;->run()V (0x46) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/util/temp/c$1;->run()V (0x198) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/config/WaIpcHelper;->jP(Ljava/lang/String;)Z (0x80) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/f/b;->J(Ljava/io/File;)V (0x6) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/f/b;->J(Ljava/io/File;)V (0x2e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/f/b;->J(Ljava/io/File;)V (0x3a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/f/b;->a(Ljava/lang/String; [Ljava/lang/String; J J)Lcom/uc/base/wa/f/b$c; (0xfe) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/f/b;->a(Ljava/lang/String; [Ljava/lang/String; J J)Lcom/uc/base/wa/f/b$c; (0x174) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/f/b;->b(Ljava/lang/String; [Ljava/lang/String; J J)I (0x9c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/f/b;->b(Ljava/lang/String; [Ljava/lang/String; J J)I (0xa8) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/g/a$a;->a(I Ljava/util/LinkedList; J J)Z (0x116) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/CrashSDKWrapper$7;->hx(Ljava/lang/String; Ljava/lang/String;)V (0x6e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/CrashSDKWrapper;->FY(Ljava/lang/String;)V (0x7c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/CrashSDKWrapper;->hQ(Landroid/content/Context;)V (0x1ca) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/b/b$4;->run()V (0x34) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/download/al;->j(Ljava/io/File; Ljava/lang/String;)V (0x60) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/k/b/d$a;->handleMessage(Landroid/os/Message;)V (0x6da) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/launcher/model/appcenter/LauncherAppCenterModel;->as(I Z)V (0xb4) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/launcher/model/appcenter/LauncherAppCenterModel;->xy(I)V (0x9e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/launcher/model/appcenter/LauncherAppCenterModel;->xy(I)V (0x15a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/launcher/model/appcenter/a$1;->run()V (0x1a8) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/skinmgmt/r;->bFU()I (0x7e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/e/a;->a(Ljava/util/Set; Landroid/content/Context;)Ljava/lang/String; (0x4e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/e/a;->a(Ljava/util/Set; Landroid/content/Context;)Ljava/lang/String; (0xcc) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/e/a;->c(Ljava/lang/String; Ljava/lang/ClassLoader;)I (0x15a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/internaldex/UCInternalDexLoader;->prepareDir(Ljava/io/File;)V (0x18) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/internaldex/c;->bB(Landroid/content/Context; Ljava/lang/String;)V (0x56) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/internaldex/e;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String; Z Ljava/util/Map;)Ljava/io/File; (0x42) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/internaldex/e;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String; Z Ljava/util/Map;)Ljava/io/File; (0x9c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/internaldex/e;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String; Z Ljava/util/Map;)Ljava/io/File; (0x1b2) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/internaldex/e;->gp(Ljava/lang/String; Ljava/lang/String;)Ljava/io/File; (0x3e) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/m$a;->run()V (0x15e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/n/b;->aw(Ljava/io/File;)Z (0x4) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/core/android/support/multidex/a;->c(Landroid/content/Context;)V (0xbc) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/core/android/support/multidex/a;->c(Landroid/content/Context;)V (0x108) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/core/android/support/multidex/b;->a(Ljava/io/File; Ljava/io/File;)Ljava/util/List; (0x11a) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/core/android/support/multidex/b;->a(Ljava/io/File; Ljava/lang/String;)V (0x92) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/core/android/support/multidex/b;->a(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File;
+                    Ljava/lang/String;)V (0xda) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/core/android/support/multidex/b;->a(Ljava/util/zip/ZipFile; Ljava/util/zip/ZipEntry; Ljava/io/File;
+                    Ljava/lang/String;)V (0x146) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/a/b;->a(Ljava/lang/String; Ljava/lang/String; Z)Ljava/lang/String; (0x184) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/a/b;->a(Ljava/lang/String; Ljava/lang/String;)Z (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/a/g;->a(Ljava/io/File;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/a;->a(Ljava/io/OutputStream; Ljava/lang/String; Ljava/util/ArrayList;)V (0x16e) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/b;->K()V (0x20) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/b;->b(Ljava/lang/String;)Z (0x3c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/e;->M()V (0xa4) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/e;->a(Lcom/uc/crashsdk/e$b; Ljava/lang/String; J)V (0x10a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/e;->a(Ljava/lang/String; Z Z)V (0x380) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/e;->a(Ljava/lang/String; Z Z)V (0x67e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/e;->a(Z)V (0x102) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/e;->a(Z)V (0x140) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/e;->m(Ljava/lang/String;)Ljava/lang/String; (0x3a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/crashsdk/f;->a(I [Ljava/lang/Object;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/devconfig/c/a;->F(Ljava/io/File;)Z (0x46) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/framework/resources/j;->G(Ljava/io/File;)V (0x2e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/framework/resources/j;->G(Ljava/io/File;)V (0x3a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/framework/resources/j;->G(Ljava/io/File;)V (0x46) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/framework/resources/j;->delete()V (0x26) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/imagecodec/export/ImageCodecFactory;->a(Ljava/lang/String; Ljava/lang/String;)V (0x44) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/imagecodec/export/ImageCodecFactory;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/io/InputStream;)Z (0x52) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/imagecodec/export/ImageCodecFactory;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/io/InputStream;)Z (0x64) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/sdk/safemode/d/a;->b(Ljava/io/File; Ljava/util/ArrayList;)Z (0xd0) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/spacex/a/d;->jk(Ljava/lang/String;)Ljava/io/File; (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager$b;-><init>(Lcom/uc/webview/browser/internal/PreloadManager;
+                    Ljava/io/InputStream; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V (0xbe) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager$b;->close()V (0x20) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager$b;->read()I (0x8a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager$b;->read()I (0xf6) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager$b;->read([B I I)I (0x8a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager$b;->read([B I I)I (0xf4) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/cyclone/UCCyclone;->decompressIfNeeded(Landroid/content/Context; Ljava/lang/String;
+                    Ljava/lang/String; J J Ljava/io/File; Ljava/io/File; Ljava/io/FilenameFilter; Z I)Z (0x1ec) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/cyclone/UCCyclone;->deleteFile(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/cyclone/UCCyclone;->expectMakeDecompressFinished(Ljava/lang/String; J J Ljava/io/File; I)V (0x6e)
+                    ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/cyclone/UCCyclone;->genFile(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String; J Ljava/lang/String; [[B [Ljava/lang/Object;)Ljava/io/File; (0x7c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/cyclone/UCCyclone;->recursiveDelete(Ljava/io/File; Z Ljava/lang/Object;)V (0x12a) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/cyclone/UCCyclone;->recursiveDelete(Ljava/io/File; Z Ljava/lang/Object;)V (0x182) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/cyclone/UCLoader;->doCheckOdexFile(Ljava/lang/String; Ljava/lang/String; Z)Ljava/lang/String;
+                    (0x5e) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/SDKFactory;->invoke(I [Ljava/lang/Object;)Ljava/lang/Object; (0x894) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/UCSetupTask$a;->a(Lcom/uc/webview/export/internal/setup/UCSetupTask$a;)V (0x6e) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/UCSetupTask$a;->a(Lcom/uc/webview/export/internal/setup/UCSetupTask$a;)V (0x78) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/UCSetupTask$a;->a()V (0x4) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/UCSetupTask$a;->a()V (0xe) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/r;->a(Ljava/io/File;)Z (0x3c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/r;->a(Ljava/io/File;)Z (0x48) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/uc/wa/e;->run()V (0x2b8) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/uc/wa/e;->run()V (0x2d0) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/h;->a(Ljava/io/File; Ljava/io/File; Ljava/io/File; Z)Ljava/io/File; (0xd2) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/h;->a(Ljava/io/File; Ljava/io/File; Ljava/io/File; Z)Ljava/io/File; (0x1c6) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/h;->a(Ljava/io/File; Ljava/io/File; Ljava/io/File; Z)Ljava/io/File; (0x248) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/h;->a(Ljava/io/File; Ljava/io/File;)V (0x68) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/h;->a([Ljava/io/File; [Ljava/io/File; [Ljava/io/File;)[Ljava/io/File; (0x1e2) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/h;->a([Ljava/io/File; [Ljava/io/File; [Ljava/io/File;)[Ljava/io/File; (0x24c) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/k;->a(Ljava/lang/String; Landroid/content/Context; Z)V (0x86) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/utility/k;->a(Ljava/lang/String; Landroid/content/Context; Z)V (0x8e) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/utility/download/UpdateTask;->a(Ljava/io/File;)V (0xe) ---> Ljava/io/File;->delete()Z
+               => Lcom/yolo/base/a/aa;->F(Ljava/io/File;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/yolo/base/a/aa;->Y(Ljava/io/File;)B (0x56) ---> Ljava/io/File;->delete()Z
+               => Lcom/yolo/base/a/aa;->aL(Landroid/content/Context; Ljava/lang/String;)Z (0x13c) ---> Ljava/io/File;->delete()Z
+               => Lcom/yolo/base/a/aa;->jk(Ljava/lang/String;)Ljava/io/File; (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/yolo/base/a;->z(Ljava/lang/String; Z)Z (0x6c) ---> Ljava/io/File;->delete()Z
+               => Lcom/UCMobile/model/j;->aAV()V (0x13c) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/lang/String; Lcom/alibaba/wireless/security/framework/c$a;
+                    Landroid/content/Context; Ljava/lang/String;)Lcom/alibaba/wireless/security/framework/b; (0xea) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/lang/String; Lcom/alibaba/wireless/security/framework/c$a;
+                    Landroid/content/Context; Ljava/lang/String;)Lcom/alibaba/wireless/security/framework/b; (0x9ac) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/lang/String; Ljava/io/File;)Ljava/io/File; (0x12a) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File;)V (0x3a) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x50) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x62) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x10a) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x142) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x148) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x166) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x16c) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x18a) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x190) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x1b2) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x1b8) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x1d6) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->a(Ljava/io/File; Ljava/io/File;)Z (0x1dc) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->b()Lcom/alibaba/wireless/security/framework/a; (0x44) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->b(Ljava/lang/String; Ljava/lang/String;
+                    Z)Lcom/alibaba/wireless/security/framework/c$a; (0x15c) ---> Ljava/io/File;->delete()Z
+               => Lcom/alibaba/wireless/security/framework/c;->b(Ljava/lang/String; Ljava/lang/String;
+                    Z)Lcom/alibaba/wireless/security/framework/c$a; (0x172) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/b;->b()V (0x160) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/bg;->b()V (0xa2) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/bg;->e()V (0x1a) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/bg;->run()V (0x28) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/bl;->e(Landroid/content/Context; Lcom/b/ai;)Lcom/b/bl; (0x146) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/bl;->e(Landroid/content/Context; Lcom/b/ai;)Lcom/b/bl; (0x14e) ---> Ljava/io/File;->delete()Z
+               => Lcom/e/a/c/a/a$a;->JG()Z (0x3c) ---> Ljava/io/File;->delete()Z
+               => Lcom/e/a/c/a/a$a;->JG()Z (0xa0) ---> Ljava/io/File;->delete()Z
+               => Lcom/e/a/c/a/a$a;->JG()Z (0xbc) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/ads/internal/r/b/a/e;->a(Ljava/util/List;)V (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/iid/InstanceIDListenerService;->handleIntent(Landroid/content/Intent;)V (0xf8) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/g/a$a$a;->hr(I)V (0xe4) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/g/a$a$a;->hr(I)V (0x10a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/wa/g/a$a$a;->hr(I)V (0x11a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/CrashSDKWrapper$c;->ay(Ljava/io/File;)Ljava/io/File; (0x78) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/business/account/a/i;->a(Lcom/uc/browser/business/account/a/d; Ljava/lang/String; I Ljava/lang/String;)V
+                    (0xc8) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/business/account/a/i;->c(I Lcom/uc/browser/business/account/a/d;)V (0xe2) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/business/a/j;->deleteFile(Ljava/lang/String;)Z (0x10) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/business/a/j;->deleteFile(Ljava/lang/String;)Z (0x1c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/business/a/j;->e(Ljava/lang/String; [B)Z (0x98) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/business/a/j;->e(Ljava/lang/String; [B)Z (0xfa) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ap;->a(Ljava/io/File; Ljava/io/File;)V (0x7c) ---> Ljava/io/File;->delete()Z
+               => Lcom/b/ap;->b()V (0xa8) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager;->a(Z)V (0xf6) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager;->a(Z)V (0x11c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager;->deletePreloadResource(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String;)V (0xae) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager;->deletePreloadResource(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String;)V (0xb4) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager;->deletePreloadResource(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String;)V (0xfe) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager;->deletePreloadResource(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String;)V (0x106) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/browser/internal/PreloadManager;->deletePreloadResource(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String;)V (0x10c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/bd;->a(Landroid/content/Context;)V (0x36) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/bd;->run()V (0x2d8) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/bd;->run()V (0x478) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/bd;->run()V (0x85a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/bd;->run()V (0x88c) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/l;->a(Ljava/io/File; I)Z (0x4a) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/l;->b(Ljava/io/File; Ljava/lang/String;)V (0x72) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/core/download/service/b/a/c;->b(Lcom/uc/browser/core/download/u; Ljava/lang/String;
+                    Ljava/lang/String;)Ljava/lang/String; (0x184) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/tools/a/a;->as(Ljava/io/File;)V (0x28) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/tools/a/a;->as(Ljava/io/File;)V (0x34) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/base/tools/a/a;->Bx(Ljava/lang/String;)Z (0x1d2) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/webwindow/f;->onEvent(Lcom/uc/base/a/d;)V (0x6b6) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/browser/webwindow/f;->onEvent(Lcom/uc/base/a/d;)V (0x6da) ---> Ljava/io/File;->delete()Z
+               => Lcom/uc/webview/export/internal/setup/BrowserSetupTask;->i(Lcom/uc/webview/export/internal/setup/BrowserSetupTask;)V
+                    (0xda) ---> Ljava/io/File;->delete()Z
+[Notice] <Hacker> APK Installing Source Checking:
+           This app has code checking APK installer sources(e.g. from Google Play, from Amazon, etc.). It might be used to check for whether
+           the app is hacked by the attackers.
+               => Lcom/facebook/ads/internal/i/b;->e()Ljava/lang/String; (0x24) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/facebook/ads/internal/q/c$1;->run()V (0x108) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/facebook/internal/v;->jF(Landroid/content/Context;)Lcom/facebook/internal/v; (0xe6) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/appsflyer/c;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Z Landroid/content/SharedPreferences; Z Landroid/content/Intent;)Ljava/util/Map; (0x700) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+[Notice] <KeyStore><Hacker> Possible KeyStore File Location:
+           BKS possible keystore file:
+               assets/UCMobile/certificates/
+               assets/UCMobile/certificates/CFCA_Root_CA.cer
+               assets/UCMobile/certificates/Entrust_net.cer
+               assets/UCMobile/certificates/Equifax.cer
+               assets/UCMobile/certificates/GTE_Corporation.cer
+               assets/UCMobile/certificates/GeoTrust_Inc.cer
+               assets/UCMobile/certificates/GlobalSign_Root_CA.cer
+               assets/UCMobile/certificates/Thawte.cer
+               assets/UCMobile/certificates/Verisign_Inc.cer
+[Notice] <Signature><Hacker> Getting Signature Code Checking:
+           This app has code checking the package signature in the code. It might be used to check for whether the app is hacked by the
+           attackers.
+               => Lcom/b/be;->e(Landroid/content/Context;)Ljava/lang/String; (0x14) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/b/ce;->b(Landroid/content/Context;)Ljava/lang/String; (0x32) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/facebook/ads/internal/s/a/g;->b(Landroid/content/Context;)Ljava/lang/String; (0x1e) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/facebook/internal/j;->cb(Landroid/content/Context; Ljava/lang/String;)Z (0x3a) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/m;->a(Landroid/content/Context; Z I)I (0x42) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/util/h;->q(Landroid/content/Context; I)Z (0x2c) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/uc/webview/export/internal/utility/g$a;->a(Landroid/content/Context;
+                    Ljava/lang/String;)[Landroid/content/pm/Signature; (0xe) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+[Notice]  Native Library Loading Checking:
+           Native library loading codes(System.loadLibrary(...)) found:
+               [libhelp.so]
+               => Lcn/help/acs/d$1;->c()Z (0x18) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libucinflator.so]
+               => Lcom/UCMobile/Apollo/Apollo;->loadUCInflator()Z (0xa2) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libinitHelper.so]
+               => Lcom/UCMobile/Apollo/a/b;->c()Z (0xf4) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libzstd.so]
+               => Lcom/github/luben/zstd/Loader;->load()V (0x20) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libdalvikhack.so]
+               => Lcom/taobao/android/runtime/DalvikUtils;->dO()Z (0x4) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libresm.so]
+               => Lcom/uc/base/image/b;->RW()Z (0xc) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libuccrypto.so]
+               => Lcom/uc/crypto/b;->acM()V (0x2e) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libimagecodec.so]
+               => Lcom/uc/imagecodec/decoder/common/b;->c()Z (0x13e) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libstlport_shared.so]
+               => Lcom/uc/sdk/ulog/Xlog;->open(I I I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V (0xe)
+                    ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libmarsulog.so]
+               => Lcom/uc/sdk/ulog/Xlog;->open(I I I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Z)V (0x18)
+                    ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libdaemon_manager.so]
+               => Lcom/uc/ud/ploys/doubleprocess/DpManager;-><init>(Landroid/content/Context; Z)V (0x2c) --->
+                    Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 activity => com.uc.browser.InnerUCMobile
+                 activity => com.ucmusic.notindex.MainActivityShell
+                 activity => com.facebook.CustomTabActivity
+                 activity => com.uc.browser.office.OfficeActivity
+                 activity => com.uc.browser.bgprocess.bussinessmanager.lockscreen.LockScreenSwitchChangeActivity
+                 activity => com.uc.ud.ploys.friend.FriendAcceptorActivity
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink1
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink2
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink3
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink4
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink5
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink6
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink7
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink8
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink9
+               activity-alias => com.UCMobile.main.UCMobile.alias.AppLink10
+               activity-alias => com.UCMobile.main.UCMobile.alias.websearch
+               activity-alias => com.UCMobile.main.UCMobile.alias.download
+               activity-alias => com.UCMobile.main.UCMobile.alias.video
+               activity-alias => com.UCMobile.main.UCMobile.alias.image
+               activity-alias => com.UCMobile.main.UCMobile.alias.text
+               activity-alias => com.uc.browser.business.search.quicksearch.SearchActivity.alias.assist
+               activity-alias => com.uc.browser.office.pdf_reader
+                  service => com.uc.ud.ploys.sync.AuthenticatorService
+                  service => com.uc.ud.ploys.sync.SyncService
+                 receiver => com.uc.base.system.receivers.SysReceiver
+                 receiver => com.taobao.accs.EventReceiver
+                 receiver => com.ucmusic.notindex.RemoteControlEventReceiver
+[Info]  AndroidManifest Adb Backup Checking:
+           This app has disabled Adb Backup.
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+------------------------------------------------------------
+AndroBugs analyzing time: 297.488 secs
+Total elapsed time: 377.812 secs
